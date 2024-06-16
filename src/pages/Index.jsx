@@ -33,12 +33,6 @@ const Index = () => {
               src={iframeUrl}
               width="100%"
               height="100%"
-              onLoad={(e) => {
-                const iframe = e.target.contentWindow;
-                const script = iframe.document.createElement("script");
-                script.src = "http://localhost:3000/script.js";
-                iframe.document.head.appendChild(script);
-              }}
             />
           </Box>
         )}
